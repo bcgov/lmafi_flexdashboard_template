@@ -10,9 +10,11 @@ params:
 ---
 
 ```{r}
+#libraries--------------------
 library(tidyverse)
 library(shinyWidgets)
 library(plotly)
+#constants-------------------
 page_titles <- c("Page 1",#replace with your page titles
                  "Page 2",
                  "Page 3",
@@ -26,7 +28,7 @@ page_titles <- c("Page 1",#replace with your page titles
                  "Page 11",
                  "Page 12"
                  )
-
+#functions-------------------
 nav_but <- function(direction, name){
     name <- str_to_lower(name)%>%
       str_replace_all(" ","-")
@@ -63,9 +65,31 @@ nav_but("previous", page_titles[1])
 nav_but("next", page_titles[3])
 ```
 
-## Column
-
 ### `r page_titles[2]`
+
+```{r}
+#shiny inputs defined here-------------
+
+#reactive objects here---------------
+
+```
+
+Column {.tabset}
+-------------------------------------
+
+### First Tab
+
+```{r}
+#render object here--------------
+
+```
+
+### Second Tab
+
+```{r}
+#render object here--------------
+
+```
 
 # `r page_titles[3]` {data-navmenu="Table of Contents"}
 
@@ -74,11 +98,13 @@ nav_but("next", page_titles[3])
 ```{r}
 nav_but("previous", page_titles[2])
 nav_but("next", page_titles[4])
+
 ```
+
+### `r page_titles[3]`
 
 ## Column
 
-### `r page_titles[3]`
 
 # `r page_titles[4]` {data-navmenu="Table of Contents"}
 
@@ -89,9 +115,9 @@ nav_but("previous", page_titles[3])
 nav_but("next", page_titles[5])
 ```
 
-## Column
-
 ### `r page_titles[4]`
+
+## Column
 
 # `r page_titles[5]` {data-navmenu="Table of Contents"}
 
@@ -102,9 +128,9 @@ nav_but("previous", page_titles[4])
 nav_but("next", page_titles[6])
 ```
 
-## Column
-
 ### `r page_titles[5]`
+
+## Column
 
 # `r page_titles[6]` {data-navmenu="Table of Contents"}
 
@@ -115,9 +141,9 @@ nav_but("previous", page_titles[5])
 nav_but("next", page_titles[7])
 ```
 
-## Column
-
 ### `r page_titles[6]`
+
+## Column
 
 # `r page_titles[7]` {data-navmenu="Table of Contents"}
 
@@ -128,9 +154,9 @@ nav_but("previous", page_titles[6])
 nav_but("next", page_titles[8])
 ```
 
-## Column
-
 ### `r page_titles[7]`
+
+## Column
 
 # `r page_titles[8]` {data-navmenu="Table of Contents"}
 
@@ -141,9 +167,9 @@ nav_but("previous", page_titles[7])
 nav_but("next", page_titles[9])
 ```
 
-## Column
-
 ### `r page_titles[8]`
+
+## Column
 
 # `r page_titles[9]` {data-navmenu="Table of Contents"}
 
@@ -153,10 +179,9 @@ nav_but("next", page_titles[9])
 nav_but("previous", page_titles[8])
 nav_but("next", page_titles[10])
 ```
+### `r page_titles[9]`
 
 ## Column
-
-### `r page_titles[9]`
 
 # `r page_titles[10]` {data-navmenu="Table of Contents"}
 
@@ -166,10 +191,9 @@ nav_but("next", page_titles[10])
 nav_but("previous", page_titles[9])
 nav_but("next", page_titles[11])
 ```
+### `r page_titles[10]`
 
 ## Column
-
-### `r page_titles[10]`
 
 # `r page_titles[11]` {data-navmenu="Table of Contents"}
 
@@ -180,9 +204,9 @@ nav_but("previous", page_titles[10])
 nav_but("next", page_titles[12])
 ```
 
-## Column
-
 ### `r page_titles[11]`
+
+## Column
 
 # `r page_titles[12]` {data-navmenu="Table of Contents"}
 
@@ -193,6 +217,8 @@ nav_but("previous", page_titles[11])
 nav_but("first", page_titles[1])
 ```
 
+### `r page_titles[12]`
+
 ## Column
 
-### `r page_titles[12]`
+
