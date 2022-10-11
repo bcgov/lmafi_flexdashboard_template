@@ -12,8 +12,6 @@ params:
 ```{r}
 #libraries--------------------
 library(tidyverse)
-library(shinyWidgets)
-library(plotly)
 #constants-------------------
 page_titles <- c("Page 1",#replace with your page titles
                  "Page 2",
