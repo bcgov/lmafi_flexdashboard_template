@@ -40,7 +40,7 @@ nav_but <- function(direction, name){
 # `r page_titles[1]` {data-navmenu="Table of Contents"}
 
 ## Inputs {.sidebar}
-
+<br>
 ```{r}
 nav_but("last", tail(page_titles, n=1))
 nav_but("next", page_titles[2])
@@ -177,6 +177,7 @@ nav_but("next", page_titles[9])
 nav_but("previous", page_titles[8])
 nav_but("next", page_titles[10])
 ```
+
 ### `r page_titles[9]`
 
 ## Column
@@ -189,6 +190,7 @@ nav_but("next", page_titles[10])
 nav_but("previous", page_titles[9])
 nav_but("next", page_titles[11])
 ```
+
 ### `r page_titles[10]`
 
 ## Column
