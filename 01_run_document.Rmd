@@ -13,7 +13,7 @@ params:
 #libraries--------------------
 library(tidyverse)
 #constants-------------------
-page_titles <- c("Page 1",#replace with your page titles
+page_titles <- c("Page 1",#replace with your own page titles... this list MUST be the same length as the number of pages.
                  "Page 2",
                  "Page 3",
                  "Page 4",
